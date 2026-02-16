@@ -1,16 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom utilities */
-html,body{height:100%}
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+}
 
-/* Small helpers for animated entrances */
-.reveal { opacity: 0; transform: translateY(8px); transition: opacity 420ms ease, transform 420ms ease }
-.reveal.is-visible { opacity: 1; transform: translateY(0) }
+@layer components {
+  .nav-link {
+    @apply text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200;
+  }
+  .nav-link-dark {
+    @apply text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-primary-600 rounded-lg shadow-lg shadow-primary-600/25 hover:bg-primary-700 hover:shadow-primary-700/30 transition-all duration-300 hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-primary-400 border border-primary-400/30 rounded-lg hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-all duration-300;
+  }
+  .btn-white {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-primary-700 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-500 mt-4 max-w-2xl;
+  }
+}
 
-/* Make images look crisp and responsive */
-img { display:block; max-width:100%; height:auto }
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
 
-/* Simple utility for hero gradient */
-.hero-gradient { background: linear-gradient(90deg, rgba(79,70,229,0.08), rgba(99,102,241,0.04)); }
+/* Gradient background utility */
+.gradient-dark {
+  background: linear-gradient(135deg, #0f0d2e 0%, #1e1b4b 50%, #312e81 100%);
+}
+.gradient-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #818cf8 100%);
+}
+
+/* Animated floating dots */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+  50% { transform: translateY(-15px) rotate(5deg); opacity: 1; }
+}
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+.float-animation-delay {
+  animation: float 6s ease-in-out 2s infinite;
+}
