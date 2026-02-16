@@ -9,40 +9,43 @@
   <body class="bg-gray-50 text-gray-800 antialiased">
     <header class="bg-white shadow">
       <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-        <h1 class="text-2xl font-bold">Walter Assets</h1>
+        <a href="/" class="flex items-center gap-3">
+          <img src="/src/assets/logo.svg" alt="Walter Assets" class="h-10 w-10 animate-float">
+          <h1 class="text-2xl font-bold">Walter Assets</h1>
+        </a>
         <nav class="space-x-4">
-          <a href="/" class="text-gray-700 hover:text-indigo-600">Accueil</a>
-          <a href="/src/pages/services.html" class="text-gray-700 hover:text-indigo-600">Services</a>
-          <a href="/src/pages/solutions.html" class="text-gray-700 hover:text-indigo-600">Solutions</a>
-          <a href="/src/pages/kubernetes-center.html" class="text-gray-700 hover:text-indigo-600">Kubernetes Center</a>
-          <a href="/src/pages/contact.html" class="text-gray-700 hover:text-indigo-600">Contact</a>
+          <a href="/" class="text-gray-700 hover:text-primary transition-colors">Accueil</a>
+          <a href="/src/pages/services.html" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+          <a href="/src/pages/solutions.html" class="text-gray-700 hover:text-primary transition-colors">Solutions</a>
+          <a href="/src/pages/kubernetes-center.html" class="text-gray-700 hover:text-primary transition-colors">Kubernetes</a>
+          <a href="/src/pages/contact.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
         </nav>
       </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 py-16">
-      <section class="text-center">
-        <h2 class="text-4xl font-extrabold mb-4">Empower Your Business</h2>
+      <section class="text-center hero-gradient rounded-xl p-12 reveal">
+        <h2 class="text-5xl font-extrabold mb-4 animate-fade-up">Empower Your Business</h2>
         <p class="text-lg text-gray-600 mb-8">Innovative IT solutions for secure, scalable cloud technologies and digital transformation.</p>
-        <a href="https://calendly.com/walterassets/30min" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition-transform">Get Started</a>
+        <a href="https://calendly.com/walterassets/30min" class="inline-block bg-primary text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition-transform">Get Started</a>
       </section>
 
       <section class="mt-12 grid gap-8 md:grid-cols-3">
-        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow reveal">
           <h3 class="font-semibold text-xl mb-2">Innovative IT Solutions</h3>
           <p class="text-gray-600">At Walter Assets since 2018, we specialize in advanced cloud technologies and security solutions, empowering businesses with scalable and secure IT infrastructures.</p>
         </article>
-        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow reveal">
           <h3 class="font-semibold text-xl mb-2">Cloud Migration</h3>
           <p class="text-gray-600">Migration, modernisation and managed services to move your workloads securely to the cloud.</p>
         </article>
-        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow reveal">
           <h3 class="font-semibold text-xl mb-2">Kubernetes & DevOps</h3>
           <p class="text-gray-600">GitOps, observability, SRE practices and platform engineering for resilient systems.</p>
         </article>
       </section>
 
-      <section class="mt-12">
+      <section class="mt-12 reveal">
         <h3 class="text-2xl font-bold mb-4">Client Feedback</h3>
         <blockquote class="bg-white p-6 rounded-lg shadow italic text-gray-700">“Walter Assets transformed our IT infrastructure with exceptional service and innovative solutions.”</blockquote>
       </section>

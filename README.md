@@ -11,4 +11,9 @@ npm run dev
 
 Notes:
 - Content for main pages was extracted from the live site and added under `src/pages/`.
-- To include original media (images/videos), run a crawler or provide the assets and I'll integrate them.
+- Original media (images/icons) were downloaded into `src/assets/originals` when available.
+
+Live demo:
+
+- GitHub Pages: https://massin-aliouche.github.io/WalterAssets/
+

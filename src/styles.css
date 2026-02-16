@@ -4,3 +4,13 @@
 
 /* Custom utilities */
 html,body{height:100%}
+
+/* Small helpers for animated entrances */
+.reveal { opacity: 0; transform: translateY(8px); transition: opacity 420ms ease, transform 420ms ease }
+.reveal.is-visible { opacity: 1; transform: translateY(0) }
+
+/* Make images look crisp and responsive */
+img { display:block; max-width:100%; height:auto }
+
+/* Simple utility for hero gradient */
+.hero-gradient { background: linear-gradient(90deg, rgba(79,70,229,0.08), rgba(99,102,241,0.04)); }
