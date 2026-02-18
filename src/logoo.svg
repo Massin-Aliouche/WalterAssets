@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-label="WalterAssets logo">
+  <defs>
+    <!-- Couleurs (modifie ici pour matcher ton thème) -->
+    <linearGradient id="waGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4FD1FF"></stop>
+      <stop offset="55%" stop-color="#3B82F6"></stop>
+      <stop offset="100%" stop-color="#7C3AED"></stop>
+    </linearGradient>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="b"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(60,28)" fill="none" stroke="url(#waGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <!-- Cloud outline -->
+    <path d="M185 142H78c-25 0-45-20-45-45 0-23 17-42 39-45
+             7-32 36-56 70-56 27 0 51 15 63 37
+             6-3 14-5 22-5 24 0 44 20 44 44 0 3 0 6-1 9
+             22 4 39 23 39 46 0 26-21 45-46 45H185z"></path>
+
+    <!-- Circuit lines inside -->
+    <path d="M92 120h40c10 0 18-8 18-18V78"></path>
+    <path d="M110 142h54c10 0 18-8 18-18V96"></path>
+    <path d="M132 162h64c10 0 18-8 18-18V118"></path>
+
+    <!-- Nodes -->
+    <circle cx="150" cy="78" r="7" fill="#0B1220" stroke="url(#waGrad)"></circle>
+    <circle cx="178" cy="96" r="7" fill="#0B1220" stroke="url(#waGrad)"></circle>
+    <circle cx="214" cy="118" r="7" fill="#0B1220" stroke="url(#waGrad)"></circle>
+
+    <!-- Small “chip” bars -->
+    <path d="M78 120h-18"></path>
+    <path d="M96 142h-30"></path>
+    <path d="M118 162h-40"></path>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(330,0)">
+    <text x="0" y="138" font-size="86" font-weight="700" font-family="Poppins, Inter, Segoe UI, Arial, sans-serif" fill="url(#waGrad)" letter-spacing="0.5">
+      Walter<tspan font-weight="800">Assets</tspan>
+    </text>
+
+    <!-- Optional tagline (tu peux supprimer cette ligne) -->
+    <text x="2" y="182" font-size="22" font-weight="500" font-family="Poppins, Inter, Segoe UI, Arial, sans-serif" fill="#94A3B8" letter-spacing="0.6">
+      Cloud • IT • Managed Services
+    </text>
+  </g>
+</svg>
