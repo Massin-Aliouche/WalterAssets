@@ -7,9 +7,25 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', system-ui, sans-serif; }
+
+  /* Focus-visible for keyboard accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500 ring-2 ring-primary-400/30;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 @layer components {
+  /* Skip to content */
+  .skip-to-content {
+    @apply absolute -top-full left-4 z-[100] bg-primary-600 text-white px-6 py-3 rounded-b-lg font-semibold text-sm transition-all duration-200;
+  }
+  .skip-to-content:focus {
+    @apply top-0;
+  }
+
   .nav-link {
     @apply text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200;
   }
@@ -51,6 +67,27 @@
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .float-animation,
+  .float-animation-delay {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Gradient background utility */
 .gradient-dark {
   background: linear-gradient(135deg, #0f0d2e 0%, #1e1b4b 50%, #312e81 100%);
@@ -69,4 +106,17 @@
 }
 .float-animation-delay {
   animation: float 6s ease-in-out 2s infinite;
+}
+
+/* Honeypot field – hidden from real users */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  tab-index: -1;
 }
