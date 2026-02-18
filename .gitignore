@@ -3,4 +3,3 @@ dist/
 .gh-pages/
 npm-debug.log
 .DS_Store
-/.vscode/
