@@ -33,16 +33,16 @@
         <a href="kubernetes-center.html" class="nav-link">Kubernetes</a>
         <a href="contact.html" class="btn-primary text-xs !py-2 !px-4">Contact</a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-dark-900/95 backdrop-blur-md border-t border-white/10 px-6 py-4 space-y-3">
-      <a href="index.html" class="block nav-link">Accueil</a>
-      <a href="services.html" class="block nav-link">Services</a>
-      <a href="solutions.html" class="block nav-link">Solutions</a>
-      <a href="kubernetes-center.html" class="block nav-link">Kubernetes</a>
-      <a href="contact.html" class="block nav-link">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark-900/95 backdrop-blur-md border-t border-white/10 px-6 py-2 space-y-1">
+      <a href="index.html" class="block nav-link py-3">Accueil</a>
+      <a href="services.html" class="block nav-link py-3">Services</a>
+      <a href="solutions.html" class="block nav-link py-3">Solutions</a>
+      <a href="kubernetes-center.html" class="block nav-link py-3">Kubernetes</a>
+      <a href="contact.html" class="block nav-link py-3">Contact</a>
     </div>
   </nav>
 
@@ -56,14 +56,14 @@
     <div class="relative max-w-7xl mx-auto px-6 text-center">
       <span class="inline-block text-primary-400 font-semibold text-sm uppercase tracking-wider mb-4">Parlons de votre projet</span>
       <h1 class="text-4xl md:text-6xl font-black text-white mb-6">Contactez-nous</h1>
-      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Prêt à transformer votre infrastructure IT ? Discutons de vos besoins et trouvons la solution idéale.</p>
+      <p class="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto">Prêt à transformer votre infrastructure IT ? Discutons de vos besoins et trouvons la solution idéale.</p>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-5 gap-16">
+      <div class="grid lg:grid-cols-5 gap-10 lg:gap-16">
         <!-- FORM -->
         <div class="lg:col-span-3 reveal">
           <h2 class="text-2xl font-bold text-gray-900 mb-2">Envoyez-nous un message</h2>
@@ -104,7 +104,7 @@
               <textarea id="message" name="message" rows="5" required maxlength="5000" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors bg-gray-50 resize-none"></textarea>
             </div>
             <div class="flex items-start gap-3">
-              <input type="checkbox" id="consent" name="consent" required class="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500">
+              <input type="checkbox" id="consent" name="consent" required class="mt-0.5 w-5 h-5 text-primary-600 border-gray-300 rounded focus:ring-primary-500">
               <label for="consent" class="text-sm text-gray-500">J'accepte que mes données soient traitées conformément à la politique de confidentialité de Walter Assets.</label>
             </div>
             <button type="submit" class="btn-primary w-full md:w-auto">
@@ -194,7 +194,7 @@
   <section class="bg-gray-100">
     <div class="max-w-7xl mx-auto px-6 py-16 reveal">
       <div class="rounded-2xl overflow-hidden shadow-xl">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.8!2d4.8603!3d45.7536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4f6b8e0001%3A0x1!2s27+Rue+Maurice+Flandrin%2C+69003+Lyon!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Walter Assets — 27 rue Maurice Flandrin, Lyon" sandbox="allow-scripts allow-same-origin" class="w-full"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.8!2d4.8603!3d45.7536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4f6b8e0001%3A0x1!2s27+Rue+Maurice+Flandrin%2C+69003+Lyon!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Walter Assets — 27 rue Maurice Flandrin, Lyon" sandbox="allow-scripts allow-same-origin" class="w-full rounded-2xl sm:h-[400px]"></iframe>
       </div>
     </div>
   </section>
@@ -204,7 +204,7 @@
   <!-- FOOTER -->
   <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div class="grid md:grid-cols-4 gap-8 md:gap-12 mb-12">
         <div class="md:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="/src/icone.svg" alt="Walter Assets" class="w-10 h-10 rounded-full" loading="lazy">
@@ -215,11 +215,11 @@
         <div>
           <h4 class="text-white font-semibold mb-4">Navigation</h4>
           <ul class="space-y-2">
-            <li><a href="index.html" class="hover:text-primary-400 transition-colors">Accueil</a></li>
-            <li><a href="services.html" class="hover:text-primary-400 transition-colors">Services</a></li>
-            <li><a href="solutions.html" class="hover:text-primary-400 transition-colors">Solutions</a></li>
-            <li><a href="kubernetes-center.html" class="hover:text-primary-400 transition-colors">Kubernetes Center</a></li>
-            <li><a href="contact.html" class="hover:text-primary-400 transition-colors">Contact</a></li>
+            <li><a href="index.html" class="inline-block py-1.5 hover:text-primary-400 transition-colors">Accueil</a></li>
+            <li><a href="services.html" class="inline-block py-1.5 hover:text-primary-400 transition-colors">Services</a></li>
+            <li><a href="solutions.html" class="inline-block py-1.5 hover:text-primary-400 transition-colors">Solutions</a></li>
+            <li><a href="kubernetes-center.html" class="inline-block py-1.5 hover:text-primary-400 transition-colors">Kubernetes Center</a></li>
+            <li><a href="contact.html" class="inline-block py-1.5 hover:text-primary-400 transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -230,10 +230,10 @@
             <li>27 rue Maurice Flandrin<br>69003 Lyon, France</li>
           </ul>
           <div class="flex gap-3 mt-4">
-            <a href="https://www.linkedin.com/company/walter-assets" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-primary-600 flex items-center justify-center transition-colors">
+            <a href="https://www.linkedin.com/company/walter-assets" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-lg bg-white/5 hover:bg-primary-600 flex items-center justify-center transition-colors">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
-            <a href="https://www.youtube.com/@walterassets5569" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-red-600 flex items-center justify-center transition-colors">
+            <a href="https://www.youtube.com/@walterassets5569" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-11 h-11 rounded-lg bg-white/5 hover:bg-red-600 flex items-center justify-center transition-colors">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
           </div>
