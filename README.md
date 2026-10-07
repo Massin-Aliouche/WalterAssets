@@ -244,13 +244,13 @@ Le projet inclut une configuration VS Code pour supprimer les faux positifs lié
 | **LinkedIn** | [Walter Assets](https://www.linkedin.com/company/walter-assets/) |
 | **YouTube** | [Chaîne Walter Assets](https://www.youtube.com/@walterassets) |
 | **GitHub** | [ahouab](https://github.com/ahouab) |
-| **RDV** | [Calendly — 30 min](https://calendly.com/ahouab/30min) |
+| **RDV** | [Calendly — 15 min](https://calendly.com/walterassets/15min) |
 
 ---
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Walter Assets Trademarks
 
 ---
 
