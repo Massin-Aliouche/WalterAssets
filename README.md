@@ -21,7 +21,7 @@ Le site se compose de **5 pages** entièrement responsive, accessibles et optimi
 | **Services** | Détail des 4 offres : Cloud Solutions, Transformation Digitale, Infrastructure IT, Solutions sur mesure |
 | **Solutions** | 4 solutions avancées avec métriques : Sécurité, Transformation, Services IT, Infrastructure scalable |
 | **Kubernetes Center** | Centre d'expertise K8s : audit, migration, GitOps, observabilité, Kubernetes managé |
-| **Contact** | Formulaire de contact (Formspree), coordonnées, carte Google Maps, prise de RDV Calendly |
+| **Contact** | Coordonnées, carte Google Maps et prise de rendez-vous Calendly |
 
 ---
 
@@ -56,10 +56,7 @@ Le site se compose de **5 pages** entièrement responsive, accessibles et optimi
 - **Content Security Policy (CSP)** via meta tag sur chaque page
 - **Referrer-Policy** stricte (`strict-origin-when-cross-origin`)
 - `rel="noopener noreferrer"` sur tous les liens externes (`target="_blank"`)
-- Champ **honeypot** anti-spam sur le formulaire de contact
-- Validation côté client (email regex, vérification honeypot)
 - Sandbox sur l'iframe Google Maps
-- Case **RGPD** obligatoire avant soumission du formulaire
 
 ### ⚡ Performance
 - Build optimisé avec **Vite** (minification, tree-shaking, hashing des assets)
@@ -79,7 +76,6 @@ Le site se compose de **5 pages** entièrement responsive, accessibles et optimi
 | [Tailwind CSS](https://tailwindcss.com/) | 3.4 | Framework CSS utility-first |
 | [PostCSS](https://postcss.org/) | 8.4 | Transformations CSS |
 | [Autoprefixer](https://github.com/postcss/autoprefixer) | 10.4 | Préfixes navigateurs automatiques |
-| [Formspree](https://formspree.io/) | — | Backend formulaire de contact |
 | [Google Fonts](https://fonts.google.com/) | — | Typographie (Inter) |
 | [GitHub Pages](https://pages.github.com/) | — | Hébergement statique |
 
@@ -94,7 +90,7 @@ WalterAssets/
 │   └── extensions.json        # Extensions recommandées
 ├── src/
 │   ├── styles.css             # Styles globaux & composants Tailwind
-│   ├── main.js                # JavaScript (animations, menu, formulaire)
+│   ├── main.js                # JavaScript (animations et menu)
 │   └── assets/
 │       └── icone.svg          # Logo SVG Walter Assets
 ├── index.html                 # Page d'accueil
@@ -219,7 +215,6 @@ colors: {
 | `.gradient-primary` | Dégradé indigo (CTA) |
 | `.reveal` | Animation de révélation au scroll |
 | `.skip-to-content` | Lien d'accessibilité |
-| `.hp-field` | Champ honeypot anti-spam |
 
 ---
 

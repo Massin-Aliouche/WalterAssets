@@ -82,26 +82,3 @@ if (nav) {
 document.querySelectorAll('[data-year]').forEach((el) => {
   el.textContent = new Date().getFullYear()
 })
-
-// -- Contact form client-side validation & honeypot --
-const contactForm = document.querySelector('form[data-contact]')
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    // Honeypot check
-    const hp = contactForm.querySelector('[name="website"]')
-    if (hp && hp.value) {
-      e.preventDefault()
-      return
-    }
-
-    // Basic client-side validation
-    const email = contactForm.querySelector('[name="email"]')
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-      e.preventDefault()
-      email.setCustomValidity('Veuillez entrer une adresse email valide.')
-      email.reportValidity()
-      return
-    }
-    if (email) email.setCustomValidity('')
-  })
-}
